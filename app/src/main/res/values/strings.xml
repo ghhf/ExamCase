@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">ExamCase</string>
+	<string name="start_test">开始测试</string>
+	<string name="exit">退出测试</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/activity_exam"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="demo.project.happy.examcase.ExamActivity">
+
+<TextView
+	android:id="@+id/tv_exam_exit"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="退出测试"
+	android:textSize="16dp"
+	android:textColor="@color/c_6BC249"
+	android:padding="10dp"/>
+<View
+	android:layout_width="match_parent"
+	android:layout_height="1dp"
+	android:background="@color/c_6BC249"/>
+
+	<TextView
+		android:id="@+id/tv_exam_question"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="14dp"/>
+
+	<RadioGroup
+		android:id="@+id/rg_exam_choose"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:padding="8dp">
+
+		<RadioButton
+			android:id="@+id/rb_exam_choose1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:layout_marginBottom="12dp"/>
+		<RadioButton
+			android:id="@+id/rb_exam_choose2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:layout_marginBottom="12dp"/>
+		<RadioButton
+			android:id="@+id/rb_exam_choose3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:layout_marginBottom="12dp"/>
+		<RadioButton
+			android:id="@+id/rb_exam_choose4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:button="@null"
+			android:layout_marginBottom="12dp"/>
+	</RadioGroup>
+
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<TextView
+		android:id="@+id/tv_exam_previous"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		android:layout_margin="8dp"
+		android:background="@drawable/bg_rouned_rect_green"/>
+	<TextView
+		android:id="@+id/tv_exam_next"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		android:layout_margin="8dp"
+		android:background="@drawable/bg_rouned_rect_green"/>
+
+</LinearLayout>
+
+</LinearLayout>
