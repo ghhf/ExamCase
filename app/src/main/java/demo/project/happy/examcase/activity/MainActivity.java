@@ -1,10 +1,12 @@
-package demo.project.happy.examcase;
+package demo.project.happy.examcase.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import demo.project.happy.examcase.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 				startActivity(intent);
 			}
 		});
+	}
 
+	@Override
+	public void onBackPressed() {
+		finish();
 	}
 }

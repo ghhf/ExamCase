@@ -14,4 +14,7 @@
 		<item name="colorAccent">@color/c_EC9C34</item>
 	</style>
 
+	<style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+		<item name="android:button">@drawable/selected_rb_pitch_on</item>
+	</style>
 </resources>

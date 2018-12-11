@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/activity_result"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+	tools:context="demo.project.happy.examcase.activity.ResultActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/tv_result_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/exit"
+			android:gravity="center"
+			android:layout_marginBottom="8dp"/>
+
+		<TextView
+			android:id="@+id/tv_result_title"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="@string/test_result"
+			android:textSize="20dp"
+			android:textColor="@color/c_6BC249"
+			android:gravity="center"
+			android:layout_marginBottom="8dp"/>
+
+	</LinearLayout>
+
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_result_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+	</android.support.v7.widget.RecyclerView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/tv_result_right"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			tools:text="正确：5个"
+			android:textColor="@color/c_6BC249"/>
+		<TextView
+			android:id="@+id/tv_result_wrong"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			tools:text="错误：2个"
+			android:textColor="@color/c_333333"/>
+
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_result_summary"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:elevation="2dp"
+		android:textColor="@color/c_EC9C34"
+		android:textSize="18dp"
+		tools:text="正确5个，错误2个，还不错，继续努力。"/>
+</LinearLayout>

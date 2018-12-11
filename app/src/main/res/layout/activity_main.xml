@@ -6,7 +6,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/bg_main"
-	tools:context="demo.project.happy.examcase.MainActivity">
+	tools:context="demo.project.happy.examcase.activity.MainActivity">
 
 	<TextView
 		android:id="@+id/tv_main_start_test"

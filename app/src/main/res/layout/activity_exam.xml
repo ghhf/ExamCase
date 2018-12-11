@@ -6,14 +6,17 @@
 	android:orientation="vertical"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="demo.project.happy.examcase.ExamActivity">
+	tools:context="demo.project.happy.examcase.activity.ExamActivity">
 
 <TextView
 	android:id="@+id/tv_exam_exit"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
-	android:text="退出测试"
-	android:textSize="16dp"
+	android:drawableLeft="@drawable/exit"
+	android:drawablePadding="3dp"
+	android:gravity="center"
+	android:text="@string/exit"
+	android:textSize="14dp"
 	android:textColor="@color/c_6BC249"
 	android:padding="10dp"/>
 <View
@@ -25,63 +28,100 @@
 		android:id="@+id/tv_exam_question"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_margin="14dp"/>
+		android:layout_margin="14dp"
+		android:textSize="22sp"
+		tools:text="question?"/>
 
-	<RadioGroup
-		android:id="@+id/rg_exam_choose"
+	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:layout_weight="1"
-		android:orientation="vertical"
-		android:padding="8dp">
-
-		<RadioButton
-			android:id="@+id/rb_exam_choose1"
+		android:orientation="vertical">
+		<RadioGroup
+			android:id="@+id/rg_exam_choose"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:button="@null"
-			android:layout_marginBottom="12dp"/>
-		<RadioButton
-			android:id="@+id/rb_exam_choose2"
+			android:orientation="vertical"
+			android:padding="8dp">
+
+			<RadioButton
+				android:id="@+id/rb_exam_choose1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="12dp"
+				android:drawablePadding="5dp"
+				style="@style/RadioButtonStyle"
+				android:textSize="18sp"
+				tools:text="1234"/>
+			<RadioButton
+				android:id="@+id/rb_exam_choose2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="12dp"
+				android:drawablePadding="5dp"
+				android:textSize="18sp"
+				style="@style/RadioButtonStyle"
+				tools:text="1234"/>
+			<RadioButton
+				android:id="@+id/rb_exam_choose3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/RadioButtonStyle"
+				android:button="@drawable/selected_rb_pitch_on"
+				android:layout_marginBottom="12dp"
+				android:textSize="18sp"
+				android:drawablePadding="5dp"
+				tools:text="1234"/>
+			<RadioButton
+				android:id="@+id/rb_exam_choose4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/RadioButtonStyle"
+				android:layout_marginBottom="12dp"
+				android:drawablePadding="5dp"
+				android:textSize="18sp"
+				tools:text="1234"/>
+		</RadioGroup>
+
+		<TextView
+			android:id="@+id/tv_exam_answer"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:button="@null"
-			android:layout_marginBottom="12dp"/>
-		<RadioButton
-			android:id="@+id/rb_exam_choose3"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:button="@null"
-			android:layout_marginBottom="12dp"/>
-		<RadioButton
-			android:id="@+id/rb_exam_choose4"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:button="@null"
-			android:layout_marginBottom="12dp"/>
-	</RadioGroup>
-
-
-<LinearLayout
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:orientation="horizontal">
-
-	<TextView
-		android:id="@+id/tv_exam_previous"
-		android:layout_width="0dp"
-		android:layout_weight="1"
-		android:layout_height="match_parent"
-		android:layout_margin="8dp"
-		android:background="@drawable/bg_rouned_rect_green"/>
-	<TextView
-		android:id="@+id/tv_exam_next"
-		android:layout_width="0dp"
-		android:layout_weight="1"
-		android:layout_height="match_parent"
-		android:layout_margin="8dp"
-		android:background="@drawable/bg_rouned_rect_green"/>
+			android:layout_margin="12dp"
+			tools:text="答案"/>
 
 </LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="@color/c_6BC249">
+
+			<TextView
+				android:id="@+id/tv_exam_previous"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:background="@drawable/selected_press_green"
+				android:layout_margin="12dp"
+				tools:text="1"
+				android:textColor="#ffffff"/>
+
+			<TextView
+				android:id="@+id/tv_exam_next"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:background="@drawable/selected_press_green"
+				android:layout_margin="12dp"
+				tools:text="1"
+				android:textColor="#ffffff"/>
+
+		</LinearLayout>
+
 
 </LinearLayout>

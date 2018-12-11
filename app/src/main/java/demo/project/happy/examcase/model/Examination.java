@@ -1,20 +1,40 @@
-package demo.project.happy.examcase;
+package demo.project.happy.examcase.model;
 
 /**
  * Created by Happy on 2017/7/7.
  */
 
 public class Examination {
+
 	private boolean isTrue;
 	private String question;
 	private String option1,option2,option3,option4;
+	private String answer;
+	private String explain;
 
-	public Examination( String question, String option1, String option2, String option3, String option4) {
+	public Examination( String question, String option1, String option2, String option3, String option4, String answer) {
 		this.question = question;
 		this.option1 = option1;
 		this.option2 = option2;
 		this.option3 = option3;
 		this.option4 = option4;
+		this.answer = answer;
+	}
+
+	public String getExplain() {
+		return explain;
+	}
+
+	public void setExplain(String explain) {
+		this.explain = explain;
+	}
+
+	public String getAnswer() {
+		return answer;
+	}
+
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
 
 	public boolean isTrue() {
